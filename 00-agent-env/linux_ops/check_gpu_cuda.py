@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-LLM-101 GPU 和 CUDA 环境检查脚本
+Agent-101 GPU 和 CUDA 环境检查脚本
 用于验证 NVIDIA GPU 驱动和 CUDA 是否正确安装
 """
 
@@ -177,16 +177,16 @@ def provide_recommendations():
     print("   echo 'export PATH=\"/usr/local/cuda-12.1/bin:$PATH\"' >> ~/.bashrc")
     print("   echo 'export LD_LIBRARY_PATH=\"/usr/local/cuda-12.1/lib64:$LD_LIBRARY_PATH\"' >> ~/.bashrc")
     print("   source ~/.bashrc")
-    print("6. 创建Conda环境: conda create -n llm101 python=3.10.18")
-    print("7. 激活环境: conda activate llm101")
+    print("6. 创建Conda环境: conda create -n agent101 python=3.10.18")
+    print("7. 激活环境: conda activate agent101")
     print("8. 安装PyTorch: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121")
     
     print("\n🔧 自动化脚本:")
-    print("运行项目提供的自动化脚本: ./chapter01-llm-env/setup_llm101_dev.sh")
+    print("运行项目提供的自动化脚本: ./00-agent-env/setup_agent101_dev.sh")
 
 def main():
     """主函数"""
-    print("🚀 LLM-101 GPU 和 CUDA 环境检查")
+    print("🚀 Agent-101 GPU 和 CUDA 环境检查")
     print("=" * 60)
     
     # 系统信息
@@ -218,7 +218,7 @@ def main():
         provide_recommendations()
     else:
         print("\n🎉 恭喜！您的GPU和CUDA环境配置正确！")
-        print("可以开始使用LLM-101进行大模型开发了！")
+        print("可以开始使用Agent-101进行大模型开发了！")
 
 if __name__ == "__main__":
     main() 

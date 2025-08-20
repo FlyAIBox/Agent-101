@@ -192,7 +192,7 @@ Qdrant 的 Web UI 是您的 Qdrant 集合、REST API 和数据点的直观、高
 在"Qdrant集合名称"节点中：
 ```json
 {
-  "qdrant_collection_name": "llm101"
+  "qdrant_collection_name": "agent101"
 }
 ```
 

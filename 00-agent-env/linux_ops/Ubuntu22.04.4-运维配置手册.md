@@ -47,7 +47,7 @@
 #### 📦 快速配置脚本
 ```bash
 # 下载快速配置脚本
-wget https://raw.githubusercontent.com/your-repo/LLM-101/main/scripts/ubuntu-quick-setup.sh
+wget https://raw.githubusercontent.com/your-repo/Agent-101/main/scripts/ubuntu-quick-setup.sh
 chmod +x ubuntu-quick-setup.sh
 
 # 交互式配置
@@ -60,7 +60,7 @@ chmod +x ubuntu-quick-setup.sh
 #### 🔍 系统检查脚本
 ```bash
 # 下载系统检查脚本
-wget https://raw.githubusercontent.com/your-repo/LLM-101/main/scripts/system-check.sh
+wget https://raw.githubusercontent.com/your-repo/Agent-101/main/scripts/system-check.sh
 chmod +x system-check.sh
 
 # 运行系统检查
@@ -1128,7 +1128,7 @@ find /backup/configs/ -type d -mtime +30 -exec rm -rf {} \;
 
 如需技术支持，请联系：fly910905@sina.com
 
-**🎯 项目地址**: [LLM-101](https://github.com/your-repo/LLM-101)
+**🎯 项目地址**: [Agent-101](https://github.com/your-repo/Agent-101)
 
 ---
 

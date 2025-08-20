@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# LLM-101 环境配置脚本
+# Agent-101 环境配置脚本
 # 适用于 Ubuntu 22.04 + Python 3.10.18
 
 set -e
 
-echo "🚀 开始配置 LLM-101 开发环境..."
+echo "🚀 开始配置 Agent-101 开发环境..."
 
 # 检查系统版本
 echo "📋 检查系统环境..."
@@ -200,7 +200,7 @@ fi
 
 
 # 创建虚拟环境
-echo "🌟 创建 LLM-101 虚拟环境..."
+echo "🌟 创建 Agent-101 虚拟环境..."
 
 # 确保 conda 命令可用
 if ! command -v conda &> /dev/null; then
@@ -223,16 +223,16 @@ if ! command -v conda &> /dev/null; then
 fi
 
 # 检查环境是否已存在
-if conda env list | grep -q "^llm101\s"; then
-    echo "✅ llm101 环境已存在"
+if conda env list | grep -q "^agent101\s"; then
+    echo "✅ agent101 环境已存在"
 else
-    echo "🔧 创建 llm101 虚拟环境..."
-    conda create -n llm101 python=3.10.18 -y
+    echo "🔧 创建 agent101 虚拟环境..."
+    conda create -n agent101 python=3.10.18 -y
 fi
 
 # 激活虚拟环境
-echo "🔧 激活 llm101 虚拟环境..."
-conda activate llm101
+echo "🔧 激活 agent101 虚拟环境..."
+conda activate agent101
 
 # 安装项目依赖
 echo "📚 安装项目依赖..."
@@ -259,7 +259,7 @@ fi
 echo "🔧 修改 Jupyter Lab 配置..."
 cat >> "$CONFIG_FILE" << 'EOF'
 
-# LLM-101 Jupyter Lab 配置
+# Agent-101 Jupyter Lab 配置
 c.ServerApp.allow_root = True  # 允许 root 用户启动（非 root 用户可注释此行）
 c.ServerApp.ip = '*'           # 允许所有 IP 访问
 c.ServerApp.open_browser = False  # 不自动打开浏览器
@@ -317,11 +317,11 @@ echo "📝 请复制 env.template 为 .env 并填入您的 API Keys"
 
 # 完成提示
 echo ""
-echo "🎉 LLM-101 环境配置完成！"
+echo "🎉 Agent-101 环境配置完成！"
 echo ""
 echo "📋 下一步操作："
 echo "1. 重新加载环境变量: source ~/.bashrc"
-echo "2. 激活虚拟环境: conda activate llm101"
+echo "2. 激活虚拟环境: conda activate agent101"
 echo "3. 复制环境变量: cp env.template .env"
 echo "4. 编辑 .env 文件，填入您的 API Keys"
 echo "5. 检查GPU和CUDA环境: python chapter01-llm-env/linux_ops/check_gpu_cuda.py"

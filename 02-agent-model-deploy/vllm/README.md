@@ -3,7 +3,7 @@
 > **一个零门槛的大语言模型部署教程**  
 > 使用 Google Colab 免费 GPU + VLLM + FastAPI 快速部署 DeepSeek R1 模型
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FlyAIBox/LLM-101/blob/main/chapter03-llm-deploy/vllm/deepseek_r1_distill_qwen_fast_api.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FlyAIBox/Agent-101/blob/main/chapter03-llm-deploy/vllm/deepseek_r1_distill_qwen_fast_api.ipynb)
 
 ## 🎯 项目目标
 
@@ -102,7 +102,7 @@ graph TB
 ### 第一步：打开 Colab 环境
 1. 点击这个按钮 👇
 
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FlyAIBox/LLM-101/blob/main/chapter03-llm-deploy/vllm/deepseek_r1_distill_qwen_fast_api.ipynb)
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FlyAIBox/Agent-101/blob/main/chapter03-llm-deploy/vllm/deepseek_r1_distill_qwen_fast_api.ipynb)
 
 2. 登录您的 Google 账户（如果还没有账户，免费注册一个）
 3. 选择 GPU 运行时：`代码执行程序` → `更改运行时类型` → `T4 GPU`

@@ -127,7 +127,7 @@ def chat_with_ai(client, model, messages, max_tokens, temperature):
 
 def main():
     """主程序入口"""
-    print("🚀 LLM-101: 大模型持续交互应用")
+    print("🚀 Agent-101: 大模型持续交互应用")
     print("=" * 50)
     
     # 1. 初始化环境

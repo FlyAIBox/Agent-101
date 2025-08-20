@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# LLM-101 Jupyter Lab 启动脚本
+# Agent-101 Jupyter Lab 启动脚本
 # 使用方法: ./start_jupyter.sh [password]
 
 set -e
 
 echo "🚀 启动 Jupyter Lab..."
 
-# 检查是否在 llm101 环境中
-if [[ "$CONDA_DEFAULT_ENV" != "llm101" ]]; then
-    echo "⚠️  请先激活 llm101 环境:"
-    echo "conda activate llm101"
+# 检查是否在 agent101 环境中
+if [[ "$CONDA_DEFAULT_ENV" != "agent101" ]]; then
+    echo "⚠️  请先激活 agent101 环境:"
+    echo "conda activate agent101"
     exit 1
 fi
 
